@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH -J wasp-12           # Job name
+#SBATCH -o wasp-12.o%j       # Name of stdout output file
+#SBATCH -e wasp-12.e%j       # Name of stderr error file
+#SBATCH -p skx-normal      # Queue (partition) name
+#SBATCH -N 8               # Total # of nodes 
+#SBATCH --ntasks-per-node 48 
+#SBATCH -t 23:58:00        # Run time (hh:mm:ss)
+#SBATCH --mail-user=f.nail@uva.nl
+#SBATCH --mail-type=END    # Send email at begin and end of job
+#SBATCH -A TG-PHY230031        # Allocation name (req'd if you have more than 1)
+
+# Other commands must follow all #SBATCH directives...
+
+module list
+pwd
+date
+
+# Launch MPI code... 
+
+ibrun /home1/09688/fnail/MM-athena-public-version/bin/athena -i athinput.planet_wind_star_origin_w107_3D_ANISO_old -t 23:57:00 
