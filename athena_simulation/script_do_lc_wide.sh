@@ -1,0 +1,3 @@
+python ../../../planet-wind-rt/Planet_Wind_Ray_Star_Origin25.py --base_dir ./ --snapshot PW_W12.out1.00015.athdf --level 2 --N_radial 50 --f_raystep 0.05 --rstar 1.1754e11 --rplanet 1.358348e10 --eccentricity 0.0 --convergence_threshold 1.e-3 --scale 60.0 --bplanet 0.351  --angles -3.14 -2.36 -1.57 1.57  2.36  3.14
+
+python ../../../planet-wind-rt/Planet_Wind_Ray_Star_Origin25.py --base_dir ./ --snapshot PW_W12.out1.00015.athdf --level 2 --N_radial 50 --f_raystep 0.05 --rstar 1.1754e11 --rplanet 1.358348e10 --eccentricity 0.0 --convergence_threshold 1.e-3 --scale 9.0 --bplanet 0.351  --angles -3.14 -2.36 -1.57 1.57  2.36  3.14
